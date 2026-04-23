@@ -44,7 +44,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     padding: 40px 5%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .hero-img img {
@@ -65,7 +65,17 @@ body {
 
 .buttons {
     margin-top: 50px;
+    display: flex;
+    gap: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* prevents overflow */
 
+}
+
+.buttons a {
+    margin-top: 0;
+    padding-top: 10px;
 }
 
 .btn {
@@ -74,7 +84,7 @@ body {
     border-radius: 0px;
     color: white;
     text-decoration: none;
-    margin-right: 10px;
+    margin: 10px;
 }
 
 .btn-outline {
@@ -82,6 +92,7 @@ body {
     padding: 10px 20px;
     color: #EE6C4D;
     text-decoration: none;
+    margin: 10px;
 }
 
 /* ABOUT */
@@ -198,9 +209,11 @@ body {
     overflow: hidden;
     border: 4px solid #e6dfd5;
 
-    display: flex;              /* makes vertical layout */
+    display: flex;
+    /* makes vertical layout */
     flex-direction: column;
-    height: 100%;               /* ensures equal height */
+    height: 100%;
+    /* ensures equal height */
 }
 
 /* IMAGE */
@@ -217,8 +230,10 @@ body {
 
     display: flex;
     flex-direction: column;
-    flex-grow: 1;               /* takes remaining space */
+    flex-grow: 1;
+    /* takes remaining space */
 }
+
 .project-content p {
     margin-bottom: 10px;
 }
@@ -229,7 +244,8 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    margin-top: auto;           /* pushes it to bottom */
+    margin-top: auto;
+    /* pushes it to bottom */
 }
 
 /* BUTTON */
