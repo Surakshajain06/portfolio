@@ -20,10 +20,19 @@ body {
     top: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 50px;
     background: #293241;
     z-index: 1000;
     border-bottom: 2px solid #EE6C4D;
+}
+.topbar h2 {
+    color: #000000;
+    background: #98C1D9;
+    padding: 10px 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
 }
 
 .icons a {
@@ -61,6 +70,7 @@ body {
 .hero h2 {
     color: #98C1D9;
     margin: 10px 0;
+    
 }
 
 .buttons {
