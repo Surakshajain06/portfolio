@@ -11,7 +11,7 @@
 body {
     background: #000000;
     color: #E0FBFC;
-    margin: 0px 200px;
+    margin: 0px 100px;
 }
 
 /* TOPBAR */
@@ -276,7 +276,7 @@ footer {
 }
 
 /* MOBILE */
-@media(max-width: 900px) {
+@media(max-width: 1200px) {
     .hero-text {
         align-items: center;
         text-align: center;
