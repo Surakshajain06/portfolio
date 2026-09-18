@@ -68,3 +68,30 @@ var observer = new IntersectionObserver(function(entries) {
 document.querySelectorAll(".reveal").forEach(function(el) {
   observer.observe(el);
 });
+
+// Back to top
+var backToTop = document.getElementById("backToTop");
+if (backToTop) {
+  window.addEventListener("scroll", function() {
+    backToTop.classList.toggle("visible", window.scrollY > 500);
+  }, { passive: true });
+
+  backToTop.addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+// Page load transition
+document.addEventListener("DOMContentLoaded", function() {
+  document.body.classList.add("page-loaded");
+});
+
+// Cursor spotlight on cards
+var spotlightCards = document.querySelectorAll(".project-card");
+spotlightCards.forEach(function(card) {
+  card.addEventListener("mousemove", function(e) {
+    var rect = card.getBoundingClientRect();
+    card.style.setProperty("--mx", (e.clientX - rect.left) + "px");
+    card.style.setProperty("--my", (e.clientY - rect.top) + "px");
+  });
+});
