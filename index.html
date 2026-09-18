@@ -3,9 +3,65 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Suraksha Jain — Junior Research Fellow at IIT Madras. Research portfolio on Machine Learning, AI for Healthcare, and medical imaging.">
+    <meta name="keywords" content="Suraksha Jain, AI, Machine Learning, Deep Learning, Healthcare AI, Medical Imaging, IIT Madras, Junior Research Fellow, Computer Vision, Data Science">
+    <meta name="author" content="K S Suraksha Jain">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#070b12">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-    <title>Suraksha Jain</title>
+    <title>Suraksha Jain | Research Portfolio — AI/ML for Healthcare</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Suraksha Jain | Research Portfolio">
+    <meta property="og:description" content="Junior Research Fellow at IIT Madras exploring Machine Learning, AI for Healthcare, and medical imaging.">
+    <meta property="og:image" content="images/dp.png">
+    <meta property="og:site_name" content="Suraksha Jain Portfolio">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Suraksha Jain | Research Portfolio">
+    <meta name="twitter:description" content="Junior Research Fellow at IIT Madras exploring Machine Learning, AI for Healthcare, and medical imaging.">
+    <meta name="twitter:image" content="images/dp.png">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "K S Suraksha Jain",
+        "jobTitle": "Junior Research Fellow",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "IIT Madras"
+        },
+        "description": "Junior Research Fellow exploring Machine Learning, AI for Healthcare, and the mathematical foundations of intelligent systems.",
+        "knowsAbout": [
+            "Machine Learning",
+            "Deep Learning",
+            "AI for Healthcare",
+            "Medical Imaging",
+            "Computer Vision",
+            "Data Science"
+        ],
+        "alumniOf": [
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "IIT Madras"
+            },
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "NMAM Institute of Technology"
+            }
+        ],
+        "sameAs": [
+            "https://github.com/Surakshajain06",
+            "https://www.linkedin.com/in/k-s-suraksha-jain/"
+        ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -15,41 +71,68 @@
 
 <body>
 
+    <div class="scroll-progress"></div>
+
     <!-- TOP BAR -->
     <header class="topbar">
-        <h2><i>SJ</i></h2>
-        <p>#IwanttoLEARN</p>
+        <a href="#" class="logo">SJ</a>
+
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
         <div class="icons">
-            <a href="https://github.com/Surakshajain06" target="_blank">
-                <i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/k-s-suraksha-jain/" target="_blank">
+            <a href="https://github.com/Surakshajain06" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/k-s-suraksha-jain/" target="_blank" aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>
         </div>
     </header>
 
+    <!-- MOBILE BOTTOM NAV -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <a href="#about"><i class="fas fa-user"></i><span>About</span></a>
+        <a href="#skills"><i class="fas fa-code"></i><span>Skills</span></a>
+        <a href="#projects"><i class="fas fa-folder-open"></i><span>Projects</span></a>
+        <a href="#publications"><i class="fas fa-book"></i><span>Research</span></a>
+        <a href="#contact"><i class="fas fa-envelope"></i><span>Contact</span></a>
+    </nav>
+
     <!-- HERO -->
     <section class="hero">
-        <div class="hero-img">
-            <img src="images/dp.png" alt="Suraksha Jain">
+        <div class="hero-img reveal">
+            <div class="img-frame">
+                <img src="images/dp.png" alt="Suraksha Jain">
+                <span class="corner corner-tl"></span>
+                <span class="corner corner-tr"></span>
+                <span class="corner corner-bl"></span>
+                <span class="corner corner-br"></span>
+            </div>
+            <div class="orbit-ring"><span class="orbit-dot"></span></div>
+            <span class="float-chip chip-ml">ML</span>
+            <span class="float-chip chip-ai">AI</span>
+            <span class="float-chip chip-health"><i class="fas fa-heartbeat"></i></span>
         </div>
 
-        <div class="hero-text">
-            <h3><span style="font-size: 20px;font-weight: normal;">Hello! this is </span> </h3>
-            <h1><span style="font-size: 40px; color: #EE6C4D; ">Suraksha Jain</span></h1>
-            <h4><i>Junior Research Fellow, MST, IIT Madras</i></h4>
-            <br>
-
-            <p>
-            <p>
-                Exploring Machine Learning, AI for Healthcare, and the mathematical foundations behind intelligent
-                systems.
+        <div class="hero-text reveal">
+            <p class="hero-eyebrow">Hello, I am</p>
+            <h1>Suraksha Jain</h1>
+            <p class="hero-role">Junior Research Fellow &middot; MST, IIT Madras</p>
+            <p class="hero-desc">
+                Exploring Machine Learning, AI for Healthcare, and the mathematical foundations
+                behind intelligent systems.
             </p>
-            </p>
+            <p class="hero-hashtag">#learning2teach</p>
 
             <div class="buttons">
-                <a href="images/Resume1.pdf" class="btn">Technical CV</a>
-                <a href="images/Resume2.pdf" class="btn">Core CV</a>
+                <a href="images/Resume1.pdf" class="btn"><i class="fas fa-file-alt"></i> Technical CV</a>
+                <a href="images/Resume2.pdf" class="btn"><i class="fas fa-file"></i> Core CV</a>
                 <a href="#projects" class="btn-outline">Projects</a>
                 <a href="#publications" class="btn-outline">Publications</a>
             </div>
@@ -57,224 +140,221 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="about">
+    <section id="about" class="about reveal">
         <div class="about-text">
-            <h2>About Me</h2>
-
-
-<p>
-    &emsp; &emsp;I am currently working as a
-    <span style="color: #EE6C4D;font-weight: bold;">Junior Research Fellow (JRF)</span>
-    in the Department of Medical Sciences and Technology (MST) at IIT Madras
-    under the guidance of
-    <span style="color: #EE6C4D;font-weight: bold;">Prof. Rupsa Bhattacharjee</span>.
-    I hold a Bachelor's degree in Biotechnology and an M.Tech in Clinical Engineering
-    from IIT Madras, and I am transitioning into
-    <span style="color: #EE6C4D;font-weight: bold;">Machine Learning and Artificial Intelligence</span>.
-</p>
-
-<p>
-    &emsp; &emsp;I am particularly interested in the
-    <span style="color: #EE6C4D;font-weight: bold;">mathematical foundations of AI and Machine Learning</span>
-    and how these principles translate into practical algorithms and solutions.
-    Through my research work, I am exploring their applications to
-    healthcare-related problems.
-</p>
-
-<p>
-    &emsp; &emsp;My long-term goal is to pursue
-    <span style="color: #EE6C4D;font-weight: bold;">R&D in AI and Machine Learning for healthcare</span>,
-    bridging mathematical understanding, computational methods, and clinical
-    applications to contribute to meaningful healthcare solutions.
-</p>
-
-
-            <h2>Education</h2>
+            <h2 class="section-title">About Me</h2>
 
             <p>
-                <span style="color: #EE6C4D;font-weight: bold;"> <b>-M.Tech in Clinical Engineering </b></span><br>
-                <i>Indian Institute of Technology Madras (IITM) | 2024-2026 </i><br>
+                I am currently working as a
+                <span class="hl">Junior Research Fellow (JRF)</span>
+                in the Department of Medical Sciences and Technology (MST) at IIT Madras
+                under the guidance of
+                <span class="hl">Prof. Rupsa Bhattacharjee</span>.
+                I hold a Bachelor's degree in Biotechnology and an M.Tech in Clinical Engineering
+                from IIT Madras, and I am transitioning into
+                <span class="hl">Machine Learning and Artificial Intelligence</span>.
             </p>
+
             <p>
-                <span style="color: #EE6C4D;font-weight: bold;">
-                    <b>
-                        -B.E in Biotechnology
-                    </b>
-                </span>
-                <br>
-                <i>Nitte Mahalinga Adyantaya Memorial Institute of Technology | 2018-2022</i><br>
+                I am particularly interested in the
+                <span class="hl">mathematical foundations of AI and Machine Learning</span>
+                and how these principles translate into practical algorithms and solutions.
+                Through my research work, I am exploring their applications to
+                healthcare-related problems.
             </p>
 
+            <p>
+                My long-term goal is to pursue
+                <span class="hl">R&amp;D in AI and Machine Learning for healthcare</span>,
+                bridging mathematical understanding, computational methods, and clinical
+                applications to contribute to meaningful healthcare solutions.
+            </p>
 
+            <h3 class="subsection-title">Education</h3>
+
+            <div class="education">
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-industry"></i></div>
+                    <div>
+                        <h4>M.Tech in Clinical Engineering</h4>
+                        <p>IIT Madras <span class="dot">•</span> 2024 – 2026</p>
+                    </div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-microscope"></i></div>
+                    <div>
+                        <h4>B.E in Biotechnology</h4>
+                        <p>NMAM Institute of Technology <span class="dot">•</span> 2018 – 2022</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="about-img">
-            <img src="images/about.png">
+        <div class="about-aside">
+            <div class="about-img">
+                <img src="images/about.png" alt="About Suraksha Jain">
+            </div>
+
+            <div class="facts">
+                <div class="fact">
+                    <span class="fact-label">Role</span>
+                    <span>Junior Research Fellow</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">Department</span>
+                    <span>MST, IIT Madras</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">Research Focus</span>
+                    <span>AI &middot; ML &middot; Healthcare</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">Guide</span>
+                    <span>Prof. Rupsa Bhattacharjee</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!--     marquee section -->
-
-    <div class="marquee-wrapper">
-        <marquee behavior="scroll" direction="left" scrollamount="10">
-            <div class="marquee-content">
-                <b style="font-size: larger;">With Education and Experience from Institutes like </b>
+    <!-- INSTITUTE STRIP -->
+    <div class="logo-strip">
+        <p class="strip-label">Educated &amp; experienced with institutions like</p>
+        <div class="strip-track">
+            <div class="strip-content">
                 <div class="logo-item">
-                    <img src="images/logo1.png" alt="Logo 1">
+                    <img src="images/logo1.png" alt="IIT Madras">
                     <div class="logo-name">IIT Madras</div>
                 </div>
-
                 <div class="logo-item">
-                    <img src="images/logo3.png" alt="Logo 3">
+                    <img src="images/logo3.png" alt="SCTIMST">
                     <div class="logo-name">SCTIMST Trivandrum</div>
                 </div>
-
                 <div class="logo-item">
-                    <img src="images/logo4.png" alt="Logo 4">
+                    <img src="images/logo4.png" alt="CMC Vellore">
                     <div class="logo-name">CMC Vellore</div>
                 </div>
             </div>
-        </marquee>
+        </div>
     </div>
 
     <!-- SKILLS -->
-    <section class="skills-section">
-        <h1>Knowledge and Skills</h1>
-        <hr>
+    <section id="skills" class="skills-section reveal">
+        <h1 class="section-title">Knowledge &amp; Skills</h1>
         <p class="skills-sub">
             Currently focusing on building strong foundations in Machine Learning and Mathematics,
             while having prior experience working with engineering design, simulation, and software tools.
         </p>
-        <hr>
-        <div class="skills-grid">
 
-            <!-- CURRENT FOCUS -->
+        <div class="skills-grid">
             <div class="skill-box highlight">
-                <h2>AI/ML & Mathematics</h2>
+                <h2>AI/ML &amp; Mathematics</h2>
                 <ul class="no-bullets">
-                    <li>- Linear Algebra</li>
-                    <li>- Single Variable Calculus</li>
-                    <li>- Multi Variable Calculus</li>
-                    <li>- Probability & Statistics</li>
-                    <li>- Foundation of Machine Learning (FML)</li>
-                    <li>- Optimization</li>
-                    <li>- Mathematics for Data Science (MFDS)</li>
-                    <!-- <li>- Deep Learning (Basics)</li> -->
+                    <li>Linear Algebra</li>
+                    <li>Single Variable Calculus</li>
+                    <li>Multi Variable Calculus</li>
+                    <li>Probability &amp; Statistics</li>
+                    <li>Foundation of Machine Learning (FML)</li>
+                    <li>Optimization</li>
+                    <li>Mathematics for Data Science (MFDS)</li>
                 </ul>
             </div>
 
-            <!-- PROGRAMMING -->
             <div class="skill-box">
                 <h2>Programming</h2>
                 <ul class="no-bullets">
-                    <li>- Python</li>
-                    <li>- NumPy, Pandas</li>
-                    <li>- Matplotlib</li>
-                    <li>- Data Preprocessing</li>
-                    <li>- Exploratory Data Analysis</li>
-                    <li>- Model Evaluation Metrics</li>
+                    <li>Python</li>
+                    <li>NumPy, Pandas</li>
+                    <li>Matplotlib</li>
+                    <li>Data Preprocessing</li>
+                    <li>Exploratory Data Analysis</li>
+                    <li>Model Evaluation Metrics</li>
                 </ul>
             </div>
 
-            <!-- Biology -->
             <div class="skill-box">
-                <h2>Biomedical & Biology</h2>
+                <h2>Biomedical &amp; Biology</h2>
                 <ul class="no-bullets">
-                    <li> - Human Anatomy</li>
-                    <li> - Physiology</li>
-                    <li> - Pathology</li>
-                    <li> - Medical Imaging </li>
-                    <li> - Medical Device Design</li>
-
-                    <!-- <li> </li>    -->
-
+                    <li>Human Anatomy</li>
+                    <li>Physiology</li>
+                    <li>Pathology</li>
+                    <li>Medical Imaging</li>
+                    <li>Medical Device Design</li>
                 </ul>
             </div>
 
-            <!-- TOOLS -->
             <div class="skill-box">
                 <h2>Tools</h2>
                 <ul class="no-bullets">
-                    <li>- Jupyter Notebook</li>
-                    <li>- Git & GitHub</li>
-                    <li>- Google Colab</li>
-                    <li>- VS Code</li>
+                    <li>Jupyter Notebook</li>
+                    <li>Git &amp; GitHub</li>
+                    <li>Google Colab</li>
+                    <li>VS Code</li>
                 </ul>
             </div>
 
-            <!-- PREVIOUS EXPERIENCE -->
             <div class="skill-box">
                 <h2>Engineering Design</h2>
                 <ul class="no-bullets">
-                    <li>- 3D Modelling (Creo, SketchUp)</li>
-                    <li>- Engineering Design</li>
-                    <li>- ANSYS (Simulation & Analysis)</li>
-                    <li>- Product Development & Prototyping</li>
+                    <li>3D Modelling (Creo, SketchUp)</li>
+                    <li>Engineering Design</li>
+                    <li>ANSYS (Simulation &amp; Analysis)</li>
+                    <li>Product Development &amp; Prototyping</li>
                 </ul>
             </div>
 
-
-
-            <!-- GENERAL -->
             <div class="skill-box">
                 <h2>General</h2>
                 <ul class="no-bullets">
-                    <li>- Problem Solving</li>
-                    <li>- Analytical Thinking</li>
-                    <li>- Technical Documentation</li>
-                    <li>- Presentation Skills</li>
+                    <li>Problem Solving</li>
+                    <li>Analytical Thinking</li>
+                    <li>Technical Documentation</li>
+                    <li>Presentation Skills</li>
                 </ul>
             </div>
-
         </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="projects-section">
+        <h1 class="proj-title">Projects</h1>
 
-        <h1 class="proj-title">Research & Academic Projects</h1>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="aiml">AI/ML</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="electronics">Electronics</button>
+        </div>
 
         <div class="projects">
 
-            <!-- JRF  -->
-
-                        <div class="project-card">
-                <img src="images/tn11.png">
+            <!-- JRF -->
+            <div class="project-card reveal" data-category="aiml">
+                <div class="thumb">
+                    <img src="images/tn11.png" alt="Junior Research Fellow Project">
+                    <span class="status ongoing">OnGoing</span>
+                </div>
                 <div class="project-content">
                     <h3>Junior Research Fellow Project</h3>
-                    <hr>
-
-                    <span class="status done">🟡 OnGoing</span>
-
-                    <p>
-                        Details to be updated......
-                    </p>
+                    <p>Details to be updated......</p>
 
                     <div class="project-details">
                         <p><b>Institute:</b> IIT Madras</p>
                         <p><b>Type:</b> JRF Project</p>
-                        <p><b>Year:</b> July 2026 - June 2027 </p>
+                        <p><b>Year:</b> July 2026 – June 2027</p>
                         <p><b>Guide:</b> Prof. Rupsa Bhattacharjee</p>
-
-                    </div>
-
-                    <div class="project-bottom">
-                        <!-- <a href="https://github.com/Surakshajain06/Automated-2D-segmentation-of-Breast-cancer">View
-                            Project</a>
-                        <a href="images/Poster_Presentation_cl24m015_Suraksha.pdf">View Poster</a> -->
                     </div>
                 </div>
             </div>
 
             <!-- Breast Tumor Segmentation -->
-            <div class="project-card">
-                <img src="images/tn3.png">
+            <div class="project-card reveal" data-category="aiml">
+                <div class="thumb">
+                    <img src="images/tn3.png" alt="Breast Cancer Image Segmentation">
+                    <span class="status done">Completed</span>
+                </div>
                 <div class="project-content">
                     <h3>Automated Breast Cancer Image Segmentation Using 2D U-Net and MONAI</h3>
-                    <hr>
-
-                    <span class="status done">🟢 Completed</span>
-
                     <p>
                         Develop an efficient and reliable method to accurately segment breast tumor
                         regions from MRI data for precise, targeted treatment while handling
@@ -288,24 +368,20 @@
                     </div>
 
                     <div class="project-bottom">
-                        <a href="https://github.com/Surakshajain06/Automated-2D-segmentation-of-Breast-cancer">View
-                            Project</a>
+                        <a href="https://github.com/Surakshajain06/Automated-2D-segmentation-of-Breast-cancer">View Project</a>
                         <a href="images/Poster_Presentation_cl24m015_Suraksha.pdf">View Poster</a>
                     </div>
                 </div>
             </div>
 
             <!-- Rehabilitation Lift -->
-            <div class="project-card">
-                <img src="images/tn2.png">
+            <div class="project-card reveal" data-category="design">
+                <div class="thumb">
+                    <img src="images/tn2.png" alt="Patient Lift for Parkinsonism Rehabilitation">
+                    <span class="status done">Completed</span>
+                </div>
                 <div class="project-content">
-                    <h3>Design and Finite Element Analysis of Modified Patient
-                        Lift for Locomotor Parkinsonism Rehabilitation
-                    </h3>
-                    <hr>
-
-                    <span class="status done">🟢 Completed</span>
-
+                    <h3>Design and Finite Element Analysis of Modified Patient Lift for Locomotor Parkinsonism Rehabilitation</h3>
                     <p>
                         Developed a novel rehabilitation concept for the upper body of Parkinsonism
                         patients, utilizing mechanical principles involving gears and linear actuators
@@ -319,23 +395,19 @@
                     </div>
 
                     <div class="project-bottom">
-                        <a href="images/ICRTMD-2026.pdf">
-                            View Project
-                        </a>
+                        <a href="images/ICRTMD-2026.pdf">View Project</a>
                     </div>
                 </div>
             </div>
-            <!-- Custom CNN Model for classification -->
-            <div class="project-card">
-                <img src="images/tn10.png">
+
+            <!-- Custom CNN -->
+            <div class="project-card reveal" data-category="aiml">
+                <div class="thumb">
+                    <img src="images/tn10.png" alt="MRI Brain Tumor Classification">
+                    <span class="status done">Completed</span>
+                </div>
                 <div class="project-content">
-                    <h3>MRI Brain Tumor Classification Using
-                        Custom and Advanced CNN Models
-                    </h3>
-                    <hr>
-
-                    <span class="status done">🟢 Completed</span>
-
+                    <h3>MRI Brain Tumor Classification Using Custom and Advanced CNN Models</h3>
                     <p>
                         Designed and implemented a CNN-based medical image analysis framework for automated brain tumor
                         classification from MRI scans. Applied preprocessing, feature extraction, and multiclass
@@ -349,23 +421,19 @@
                     </div>
 
                     <div class="project-bottom">
-                        <a href="images/MRI Brain Tumor Classification Using Custom and Advanced CNN Models.pdf">
-                            View Project
-                        </a>
+                        <a href="images/MRI Brain Tumor Classification Using Custom and Advanced CNN Models.pdf">View Project</a>
                     </div>
                 </div>
             </div>
 
             <!-- COHMET -->
-            <div class="project-card">
-                <img src="images/tn1.png">
+            <div class="project-card reveal" data-category="electronics">
+                <div class="thumb">
+                    <img src="images/tn1.png" alt="COHMET Rehabilitation Device">
+                    <span class="status done">Completed</span>
+                </div>
                 <div class="project-content">
-                    <h3>Digitally Augmented Occupational Therapy Pegboard for Cognitive–Motor Task Quantification
-                        (COHMET) </h3>
-                    <hr>
-
-                    <span class="status done">🟢 Completed</span>
-
+                    <h3>Digitally Augmented Occupational Therapy Pegboard for Cognitive–Motor Task Quantification (COHMET)</h3>
                     <p>
                         Smart rehabilitation system with sensors and real-time tracking for
                         rehabilitation of stroke patients making the process of recovery more
@@ -379,25 +447,20 @@
                     </div>
 
                     <div class="project-bottom">
-                        <a href="https://github.com/Surakshajain06/COHMET_PVT">
-                            View Project
-                        </a>
-                        <a href="https://cohmet-cmc.netlify.app/">
-                            View Website
-                        </a>
+                        <a href="https://github.com/Surakshajain06/COHMET_PVT">View Project</a>
+                        <a href="https://cohmet-cmc.netlify.app/">View Website</a>
                     </div>
                 </div>
             </div>
 
             <!-- VR Project -->
-            <div class="project-card">
-                <img src="images/tn9.png">
+            <div class="project-card reveal" data-category="electronics">
+                <div class="thumb">
+                    <img src="images/tn9.png" alt="Virtual Rebirth of Konark Sun Temple">
+                    <span class="status done">Completed</span>
+                </div>
                 <div class="project-content">
                     <h3>Virtual Rebirth of Konark Sun Temple (VR)</h3>
-                    <hr>
-
-                    <span class="status done">🟢 Completed</span>
-
                     <p>
                         Built a Unity-based mobile VR experience with an
                         ATmega328P + HC-05 based universal handheld controller for
@@ -411,275 +474,200 @@
                     </div>
 
                     <div class="project-bottom">
-                        <a href="https://konark.netlify.app/">
-                            View Project
-                        </a>
+                        <a href="https://konark.netlify.app/">View Project</a>
                     </div>
                 </div>
             </div>
 
-        </div>
-
-        <!-- SELF LEARNING SECTION -->
-
-        <h1 class="proj-title" style="margin-top:80px;">
-            Self-Learning AI/ML Projects
-        </h1>
-
-        <div class="projects">
-
             <!-- Pneumonia -->
-            <div class="project-card">
-                <img src="images/tn4.png">
+            <div class="project-card reveal" data-category="aiml">
+                <div class="thumb">
+                    <img src="images/tn4.png" alt="Pneumonia Classification">
+                    <span class="status done">Completed</span>
+                </div>
                 <div class="project-content">
                     <h3>Pneumonia Classification Using DenseNet201</h3>
-                    <hr>
-
-                    <span class="status done">🟢 Completed</span>
-
-                    <div class="project-details">
-                        <p><b>Type:</b> Self-Learning Project</p>
-                        <p><b>Year:</b> 2025</p>
-                    </div>
-
                     <p>
                         This project focuses on classifying pneumonia from chest X-ray images
                         using deep learning models such as DenseNet201.
                     </p>
 
+                    <div class="project-details">
+                        <p><b>Type:</b> Self-Learning Project</p>
+                        <p><b>Year:</b> 2025</p>
+                    </div>
+
                     <div class="project-bottom">
-                        <a
-                            href="https://github.com/Surakshajain06/Automated-Pneumonia-Classification-from-Chest-Radiographs-Using-DenseNet201">
-                            View Project
-                        </a>
+                        <a href="https://github.com/Surakshajain06/Automated-Pneumonia-Classification-from-Chest-Radiographs-Using-DenseNet201">View Project</a>
                     </div>
                 </div>
             </div>
 
             <!-- ECG -->
-            <div class="project-card">
-                <img src="images/tn7.png">
+            <div class="project-card reveal" data-category="aiml">
+                <div class="thumb">
+                    <img src="images/tn7.png" alt="ECG Signal Classification">
+                    <span class="status done">Completed</span>
+                </div>
                 <div class="project-content">
                     <h3>ECG Signal Classification using Autoencoder-Based Feature Extraction</h3>
-                    <hr>
-
-                    <span class="status done">🟢 Completed</span>
-
-                    <div class="project-details">
-                        <p><b>Type:</b> Self-Learning Project</p>
-                        <p><b>Year:</b> 2025</p>
-                    </div>
-
                     <p>
                         Developed a deep learning pipeline using a 1D convolutional autoencoder
                         followed by machine learning classifiers for ECG classification.
                     </p>
 
+                    <div class="project-details">
+                        <p><b>Type:</b> Self-Learning Project</p>
+                        <p><b>Year:</b> 2025</p>
+                    </div>
+
                     <div class="project-bottom">
-                        <a href="https://github.com/Surakshajain06/ECG-Classification-using-Autoencoder">
-                            View Project
-                        </a>
+                        <a href="https://github.com/Surakshajain06/ECG-Classification-using-Autoencoder">View Project</a>
                     </div>
                 </div>
             </div>
 
             <!-- Diabetes -->
-            <div class="project-card">
-                <img src="images/tn6.png">
+            <div class="project-card reveal" data-category="aiml">
+                <div class="thumb">
+                    <img src="images/tn6.png" alt="Diabetes Readmission Prediction">
+                    <span class="status done">Completed</span>
+                </div>
                 <div class="project-content">
                     <h3>Diabetes Readmission Prediction using Machine Learning</h3>
-                    <hr>
-
-                    <span class="status done">🟢 Completed</span>
-
-                    <div class="project-details">
-                        <p><b>Type:</b> Self-Learning Project</p>
-                        <p><b>Year:</b> 2025</p>
-                    </div>
-
                     <p>
                         Built a machine learning model to predict hospital readmission risk in
                         diabetic patients using clinical and demographic data.
                     </p>
 
+                    <div class="project-details">
+                        <p><b>Type:</b> Self-Learning Project</p>
+                        <p><b>Year:</b> 2025</p>
+                    </div>
+
                     <div class="project-bottom">
-                        <a
-                            href="https://github.com/Surakshajain06/Diabetic-readmission-prediction-for-high-sensitivity-cleaning">
-                            View Project
-                        </a>
+                        <a href="https://github.com/Surakshajain06/Diabetic-readmission-prediction-for-high-sensitivity-cleaning">View Project</a>
                     </div>
                 </div>
             </div>
 
             <!-- House Price -->
-            <div class="project-card">
-                <img src="images/tn5.png">
+            <div class="project-card reveal" data-category="aiml">
+                <div class="thumb">
+                    <img src="images/tn5.png" alt="House Price Prediction">
+                    <span class="status done">Completed</span>
+                </div>
                 <div class="project-content">
                     <h3>House Price Prediction using Random Forest</h3>
-                    <hr>
-
-                    <span class="status done">🟢 Completed</span>
-
-                    <div class="project-details">
-                        <p><b>Type:</b> Self-Learning Project</p>
-                        <p><b>Year:</b> 2025</p>
-                    </div>
-
                     <p>
                         Developed a Random Forest based machine learning model to predict house
                         prices using various housing features.
                     </p>
 
+                    <div class="project-details">
+                        <p><b>Type:</b> Self-Learning Project</p>
+                        <p><b>Year:</b> 2025</p>
+                    </div>
+
                     <div class="project-bottom">
-                        <a href="https://github.com/Surakshajain06/House-Price-Prediction-using-RandomForestRegressor">
-                            View Project
-                        </a>
+                        <a href="https://github.com/Surakshajain06/House-Price-Prediction-using-RandomForestRegressor">View Project</a>
                     </div>
                 </div>
             </div>
 
             <!-- MNIST -->
-            <div class="project-card">
-                <img src="images/tn8.png">
+            <div class="project-card reveal" data-category="aiml">
+                <div class="thumb">
+                    <img src="images/tn8.png" alt="MNIST Digit Classification">
+                    <span class="status done">Completed</span>
+                </div>
                 <div class="project-content">
                     <h3>MNIST Handwritten Digit Classification using CNN</h3>
-                    <hr>
-
-                    <span class="status done">🟢 Completed</span>
+                    <p>
+                        Designed and trained a CNN to accurately recognize handwritten digits
+                        from the MNIST dataset.
+                    </p>
 
                     <div class="project-details">
                         <p><b>Type:</b> Self-Learning Project</p>
                         <p><b>Year:</b> 2025</p>
                     </div>
 
-                    <p>
-                        Designed and trained a CNN to accurately recognize handwritten digits
-                        from the MNIST dataset.
-                    </p>
-
                     <div class="project-bottom">
-                        <a href="https://github.com/Surakshajain06/MNIST-Handwritten-Digit-Classifier">
-                            View Project
-                        </a>
+                        <a href="https://github.com/Surakshajain06/MNIST-Handwritten-Digit-Classifier">View Project</a>
                     </div>
                 </div>
             </div>
 
         </div>
-
     </section>
 
-
     <!-- PUBLICATIONS -->
-    <section id="publications" class="projects-section">
-
-        <h1 class="proj-title">
-            Publications & Research Contributions
-        </h1>
+    <section id="publications" class="projects-section reveal">
+        <h1 class="proj-title">Publications &amp; Research Contributions</h1>
 
         <div class="publication-grid">
 
             <!-- COHMET -->
-
             <div class="publication-card">
-
+                <span class="pub-index">01</span>
                 <div class="publication-top">
-
-                    <span class="pub-status accepted">
-                        📑 Accepted
-                    </span>
-
-                    <span class="pub-year">
-                        2026
-                    </span>
-
+                    <span class="pub-status accepted"><i class="fas fa-check-circle"></i> Accepted</span>
+                    <span class="pub-year">2026</span>
                 </div>
-
                 <h3>
                     Digitally Augmented 3×3 Occupational Therapy Pegboard for Objective Cognitive–Motor Task
                     Quantification (COHMET)
                 </h3>
-
-                <p class="conference-name">
-                    International Conference on Neurorehabilitation (ICNR 2026)
-                </p>
-
+                <p class="conference-name"><i class="fas fa-microphone"></i> International Conference on Neurorehabilitation (ICNR 2026)</p>
                 <p>
                     Research paper describing the design, development and validation
                     of a rehabilitation platform for simultaneous cognitive and
                     hand-motor rehabilitation with objective performance tracking.
                 </p>
-
                 <div class="publication-meta">
-
-                    <span>
-                        <b>Type:</b> Conference Paper
-                    </span>
-
-                    <span>
-                        <b>Status:</b> Camera Ready submitted
-                    </span>
-
+                    <span class="pub-tag"><b>Type</b>Conference Paper</span>
+                    <span class="pub-tag"><b>Status</b>Camera Ready submitted</span>
                 </div>
-
             </div>
 
             <!-- REHAB LIFT -->
-
             <div class="publication-card">
-
+                <span class="pub-index">02</span>
                 <div class="publication-top">
-
-                    <span class="pub-status accepted">
-                        📑 Published
-                    </span>
-
-                    <span class="pub-year">
-                        2026
-                    </span>
-
+                    <span class="pub-status published"><i class="fas fa-check-circle"></i> Published</span>
+                    <span class="pub-year">2026</span>
                 </div>
-
                 <h3>
                     Design and Finite Element Analysis of Modified Patient Lift
                     for Locomotor Parkinsonism Rehabilitation
                 </h3>
-
-                <p class="conference-name">
-                    International Conference on Recent Trends in Materials Science & Devices 2026 (ICRTMD-2026)
-                </p>
-
+                <p class="conference-name"><i class="fas fa-microphone"></i> International Conference on Recent Trends in Materials Science &amp; Devices 2026 (ICRTMD-2026)</p>
                 <p>
                     Research work focused on the conceptualization, design,
                     finite element analysis and rehabilitation application
                     of a modified patient lift for Parkinsonism therapy.
                 </p>
-
                 <div class="publication-meta">
-
-                    <span>
-                        <b>Type:</b> Conference Paper
-
+                    <span class="pub-tag"><b>Type</b>Conference Paper</span>
+                    <span class="pub-tag"><b>Status</b>
+                        <a class="pub-link" href="https://researchplateau.com/uploads/reasearchpapers/1781328295.pdf"
+                            target="_blank">Published <i class="fas fa-arrow-down"></i></a>
                     </span>
-
-                    <span>
-                        <b>Status:</b> <a href="https://researchplateau.com/uploads/reasearchpapers/1781328295.pdf"
-                            target="_blank" style="color: #007bff; text-decoration: none;">Published ⬇️</a>
-                    </span>
-
                 </div>
-
             </div>
 
         </div>
-
     </section>
 
     <!-- FOOTER -->
-    <footer>
-        <p>mail me at <a href="mailto:surakshajain06@gmail.com" style="color: aliceblue;">surakshajain06@gmail.com</a>
-        </p>
-        <p>© 2026 K S Suraksha Jain | All Rights Reserved</p>
+    <footer id="contact">
+        <p class="footer-heading">Contact</p>
+        <a class="footer-mail" href="mailto:surakshajain06@gmail.com">
+            <i class="fas fa-envelope"></i> surakshajain06@gmail.com
+        </a>
+        <p class="footer-note">Open to research and collaboration opportunities in AI/ML for healthcare.</p>
+        <p class="copy">© 2026 K S Suraksha Jain | All Rights Reserved</p>
     </footer>
 
     <script src="script.js"></script>
