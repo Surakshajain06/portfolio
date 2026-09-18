@@ -1310,4 +1310,91 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .logo-strip {
+        padding: 24px 14px;
+    }
+
+    .strip-label {
+        font-size: 11.5px;
+        letter-spacing: 1.1px;
+        margin-bottom: 20px;
+    }
+
+    .strip-content {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+
+    .logo-item img {
+        width: 58px;
+        height: 58px;
+        padding: 7px;
+    }
+
+    .logo-name {
+        font-size: 12px;
+    }
+
+    .projects-section {
+        padding: 64px clamp(14px, 4vw, 22px);
+    }
+
+    .proj-title {
+        font-size: clamp(24px, 6.4vw, 30px);
+    }
+
+    .project-filters {
+        gap: 8px;
+        margin-bottom: 30px;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 12.5px;
+    }
+
+    .projects {
+        gap: 16px;
+    }
+
+    .project-content {
+        padding: 18px;
+    }
+
+    .project-content h3 {
+        font-size: 16px;
+    }
+
+    .project-details {
+        gap: 6px 0;
+    }
+
+    .project-bottom a {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .strip-content {
+        justify-content: space-around;
+    }
+
+    .project-filters {
+        overflow-x: auto;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        padding-bottom: 6px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .project-filters::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-btn {
+        flex-shrink: 0;
+    }
 }
