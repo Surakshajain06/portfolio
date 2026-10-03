@@ -33,6 +33,11 @@ html {
     scroll-behavior: smooth;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: var(--font-body);
     background: var(--bg);
@@ -682,7 +687,7 @@ body::before {
     border-color: rgba(15, 118, 110, 0.35);
 }
 
-.skill-box h2 {
+.skill-box h3 {
     font-family: var(--font-head);
     font-size: 18px;
     font-weight: 600;
@@ -692,7 +697,7 @@ body::before {
     gap: 10px;
 }
 
-.skill-box h2::before {
+.skill-box h3::before {
     content: "";
     width: 8px;
     height: 8px;
